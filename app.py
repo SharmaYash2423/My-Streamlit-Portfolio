@@ -27,7 +27,7 @@ def Home():
     col1, col2 = st.columns([1, 2])  # Adjust column width as needed
 
     with col1:
-        image_path = "C:/Users/Yash Sharma/Dropbox/PC/Desktop/Pictures/XeBit/IMG_7122.JPG"
+        image_path = "IMG_7122.JPG"
         image = Image.open(image_path)
 
         rotated_image = image.rotate(90, expand=True)
@@ -61,7 +61,7 @@ def Home():
         """)
     
     st.write("### Here's my resume:")
-    with open("C:/Users/Yash Sharma/Dropbox/PC/Desktop/Advance Python Programming/streamlit-portfolio-main/Yash Sharma Final Resume.pdf", "rb") as file:
+    with open("Yash Sharma Final Resume.pdf", "rb") as file:
         btn = st.download_button(
             label="Download Resume",
             data=file,
